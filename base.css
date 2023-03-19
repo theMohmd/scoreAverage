@@ -1,0 +1,19 @@
+@tailwind base;
+* {
+  /* scrollbar-width: thin; */
+  scrollbar-color: var(--secondary) var(--primary);
+}
+body{
+  scrollbar-color: #0e5e6f #f2deba;
+}
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  input[type='number']::-webkit-outer-spin-button,
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number'] {
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield !important;
+  }
+}
